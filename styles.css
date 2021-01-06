@@ -1,0 +1,328 @@
+body{
+    background-color:#202020;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.circle{
+    
+    height: 650px;
+    width: 650px;
+
+    background-color: #0f0f0f;
+    border-radius: 50%;
+    border: 1px solid #959595;
+
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    animation-name: introcircle;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.logo{
+    height: 200px;
+    width: 200px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    animation-name: intrologo;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.link1{
+    height: 75px;
+    width: 75px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 77%;
+    bottom: 0;
+    margin: auto;
+
+    animation-name: introlink1;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-delay: 3.55s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.link2{
+    height: 75px;
+    width: 75px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 77%;
+    margin: auto;
+
+    animation-name: introlink2;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-delay: 3.15s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.link3{
+    height: 75px;
+    width: 75px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    left: 77%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    animation-name: introlink3;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-delay: 3.35s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.link4{
+    height: 75px;
+    width: 75px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 77%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    animation-name: introlink4;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-delay: 3.75s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.link5{
+    height: 75px;
+    width: 75px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    left: 52%;
+    top: 52%;
+    bottom: 0;
+    margin: auto;
+
+    animation-name: introlink5;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-delay: 3.45s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.link6{
+    height: 75px;
+    width: 75px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    left: 52%;
+    top: 0;
+    bottom: 52%;
+    margin: auto;
+
+    animation-name: introlink6;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-delay: 3.25s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.link7{
+    height: 75px;
+    width: 75px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 52%;
+    left: 0;
+    top: 0;
+    bottom: 52%;
+    margin: auto;
+
+    animation-name: introlink7;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-delay: 3.85s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.link8{
+    height: 75px;
+    width: 75px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 52%;
+    left: 0;
+    top: 52%;
+    bottom: 0;
+    margin: auto;
+
+    animation-name: introlink8;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-delay: 3.65s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes introcircle{
+    0%{
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+
+    100%{
+        width: 650px;
+        height: 650px;
+        opacity: 100;
+    }
+}
+
+@keyframes intrologo{
+    0%{
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    100%{
+        width: 200;
+        height: 200;
+        opacity: 100;
+    }
+}
+
+@keyframes introlink1{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100;
+    }
+}
+
+@keyframes introlink2{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100;
+    }
+}
+
+@keyframes introlink3{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100;
+    }
+}
+
+@keyframes introlink4{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100;
+    }
+}
+
+@keyframes introlink5{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100;
+    }
+}
+
+@keyframes introlink6{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100;
+    }
+}
+
+@keyframes introlink7{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100;
+    }
+}
+
+@keyframes introlink8{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100;
+    }
+}
