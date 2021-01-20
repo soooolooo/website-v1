@@ -1,0 +1,48 @@
+body{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.divider {
+  height: 5px;
+  width: 90%;
+  margin: 5px auto;
+  margin-top: 28px;
+}
+
+.avatar{
+  width:90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.avatar img{
+
+  width:100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 0;
+  left: 0;
+  margin: 10% auto;
+
+}
+
+.buttons-table{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+}
+
