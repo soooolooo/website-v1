@@ -72,6 +72,12 @@ body{
     opacity: 0;
 }
 
+.link1:hover {
+    height: 95px;
+    width: 95px;
+    transition: all 0.3s ease-in-out;
+}
+
 .link2{
     height: 75px;
     width: 75px;
@@ -91,6 +97,12 @@ body{
     animation-delay: 3.15s;
     animation-fill-mode: forwards;
     opacity: 0;
+}
+
+.link2:hover {
+    height: 95px;
+    width: 95px;
+    transition: all 0.3s ease-in-out;
 }
 
 .link3{
@@ -114,6 +126,12 @@ body{
     opacity: 0;
 }
 
+.link3:hover {
+    height: 95px;
+    width: 95px;
+    transition: all 0.3s ease-in-out;
+}
+
 .link4{
     height: 75px;
     width: 75px;
@@ -133,6 +151,12 @@ body{
     animation-delay: 3.75s;
     animation-fill-mode: forwards;
     opacity: 0;
+}
+
+.link4:hover {
+    height: 95px;
+    width: 95px;
+    transition: all 0.3s ease-in-out;
 }
 
 .link5{
@@ -156,6 +180,12 @@ body{
     opacity: 0;
 }
 
+.link5:hover {
+    height: 95px;
+    width: 95px;
+    transition: all 0.3s ease-in-out;
+}
+
 .link6{
     height: 75px;
     width: 75px;
@@ -175,6 +205,12 @@ body{
     animation-delay: 3.25s;
     animation-fill-mode: forwards;
     opacity: 0;
+}
+
+.link6:hover {
+    height: 95px;
+    width: 95px;
+    transition: all 0.3s ease-in-out;
 }
 
 .link7{
@@ -198,6 +234,12 @@ body{
     opacity: 0;
 }
 
+.link7:hover {
+    height: 95px;
+    width: 95px;
+    transition: all 0.3s ease-in-out;
+}
+
 .link8{
     height: 75px;
     width: 75px;
@@ -217,6 +259,12 @@ body{
     animation-delay: 3.65s;
     animation-fill-mode: forwards;
     opacity: 0;
+}
+
+.link8:hover {
+    height: 95px;
+    width: 95px;
+    transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width:1000px){
@@ -543,7 +591,7 @@ body{
     }
 }
 
-@media only screen and (max-width:415px){
+@media only screen and (max-width:400px){
     .circle{
     
         height: 290px;
@@ -868,7 +916,7 @@ body{
 }
 
 
-@media only screen and (min-width: 1025px){
+@media only screen and (min-width: 1000px){
     @keyframes introcircle{
         0%{
             width: 0px;
@@ -977,10 +1025,3 @@ body{
         }
     }
 }
-
-
-
-
-
-
-
