@@ -5,8 +5,9 @@ body{
 }
 
 .cv{
+    text-align: center;
+    display: flex;
     align-items: center;
-    display: block;
     justify-content: center;
     position: absolute;
     right: 0;
