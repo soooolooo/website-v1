@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Beeshi">
+    <meta name="description" content="Best">
+    <meta name="author" content="Beeshi">
+    <title>Assignment 4</title>
+    <link rel="icon" href="gfx/cvlogo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            text-decoration: none;
+        }
+        
+        body{
+            margin: 0;
+            background-color: #1f1f1f;
+        }
+        
+        header{
+            width: 100%;
+            background-color: #3f3f3f;
+            height:110px;
+            float:none;
+        }
+
+        header .header-container{
+            font-family: 'Karla', sans-serif;
+            font-weight: 500;
+        }
+
+        header .header-container img{
+            width: 100px;
+            margin: 5px auto;
+            float: left;
+            border-right: 1px solid black;
+            padding-right: 15px;
+            padding-left: 8px;
+        }
+
+        header .header-container p{
+            line-height: 15px;
+            font-size: 24px;
+            color: black;
+            display:inline-block;
+            margin: 47.5px 20px;
+            padding-left: 15px;
+        }
+        
+        main {
+            width: 100%;
+        }
+
+        main .paragraphs-container{
+            width: 70%;
+            border: 1px solid white;
+            margin: 10px auto;
+            color: white;
+            padding: 10px;
+            overflow: hidden;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        main .paragraphs-container .paragraph1{
+            width: 45%;
+            float:left;
+        }
+
+        main .paragraphs-container .paragraph1 h3{
+            font-size: 27px;
+        }
+
+        main .paragraphs-container .paragraph1 p{
+            font-size: 22px;
+        }
+
+        main .paragraphs-container .paragraph2{
+            width: 45%;
+            float:right;
+        }
+
+        main .paragraphs-container .paragraph2 h3{
+            font-size: 27px;
+        }
+
+        main .paragraphs-container .paragraph2 p{
+            font-size: 22px;
+        }
+
+        main .div-button{
+            width: 150px;
+            height: 80px;
+            background-color: rgb(22, 58, 100);
+            border: 1px solid rgb(92, 120, 151);
+            margin: 10px auto;
+
+            transition: all 0.5s;
+        }
+
+        main .div-button p{
+            font-size: 22px;
+            font-family: 'Open Sans', sans-serif;
+            text-decoration: none;
+            text-align: center;
+            line-height: 15px;
+            margin: 30px 0;
+            color:white;
+        }
+
+        main .div-button:hover{
+            background-color: rgb(83, 143, 212);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index"><img src="gfx/first.png"></a>
+            <a href="index"><p>Home</p></a>
+            <a href="cv"><p>CV</p></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="paragraphs-container">
+            <div class="paragraph1">
+                <h3>This is paragraph 1</h3>
+                <p>In this paragraph, I will write something different from the second paragraph to make it unique and different from the second paragraph. It is going to be shorter than the second paragraph.</p>
+            </div>
+            <div class="paragraph2">
+                <h3>This is paragraph 2</h3>
+                <p>In this paragraph, I will also write something different from the first paragraph to make it unique and different from the first paragraph. It is going to be longer than the first paragraph. Due to the fact the second paragraph contains more things to cover than the first paragraph.</p>
+            </div>
+        </div>
+
+        <a href="gfx/nope.jpg">
+            <div class="div-button">
+                <p>free money!</p>
+            </div>
+        </a>
+    </main>
+</body>
