@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="Assignment submission">
+    <meta name="author" content="Osama Albeeshi, Emad As-sawah, Abdullah Alnaser, Khalid Alotaibi">
+    <title>Assignment 3-2</title>
+    <link rel="icon" href="gfx/first.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            text-decoration: none;
+            color:white;
+        }
+        
+        body{
+            background-color: #272727;
+            
+        }
+
+        input{
+            color: black;
+        }
+
+        textarea{
+            color:black;
+        }
+        
+        .form-container{
+            margin: 0 auto;
+            border: 1px solid white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .form-submission{
+            text-align: left;
+            margin: 0 auto;
+            width: 340px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .form-submission input{
+            width: 100%;
+        }
+
+        .form-submission .radios{
+            width: 10px;
+        }
+        
+        .form-container button{
+            color: white;
+            background-color: #1f1f1f;
+            border: 1px solid white;
+            width: 70px;
+            height: 20px;
+        }
+        
+        #last{
+            display: none;
+            transition: all 0.4s;
+        }
+
+        .arrow-down{
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+        
+        label, input{
+            margin: 3px;
+            padding: 2px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <h1>Assignment 3 Q3 submission:</h1>
+    
+    <div class="form-container">
+        <form action="success_page.html">
+            <h2>Site Regesteration Form</h2>
+            <p>Please complete the following form for our site<p>
+            <div class="form-submission">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+
+                <label for="date">Date:</label><br>
+                <input type="date" id="date" name="date"><br>
+
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" required><br>
+
+                <label for="department">Department:</label><br>
+                <input list="departments" name="departments" id="department">
+                <datalist id="departments">
+                    <option value="Computer Sciences">
+                    <option value="Information Systems">
+                    <option value="Informtaion Studies">
+                    <option value="Information Technology">
+                </datalist><br>
+
+                <label for="level">Your level:</label><br>
+                <input type="radio" id="level1" name="levels" value="Level 1" class="radios">
+                <label for="level1">Level 1</label>
+                <input type="radio" id="level2" name="levels" value="Level 2" class="radios">
+                <label for="level1">Level 2</label>
+                <input type="radio" id="level3" name="levels" value="Level 3" class="radios">
+                <label for="level1">Level 3</label>
+                <input type="radio" id="level4" name="levels" value="Level 4" class="radios">
+                <label for="level1">Level 4</label>
+
+                <p ><i class="arrow-down" onclick="arrowOnClick()">     </i>     Please see the below points</p>
+                <div id="last">
+                    <label>Number of best courses for you: </label>
+                    <input type="text" id="bestcourses" name="bestcourses" min="1" max="10"><br>
+                    <label for="comment">Comments:</label><br>
+                    <textarea id="comment" name="commentarea" rows="10" cols="47"></textarea>
+                </div>
+
+                <a href="#" onclick="topFunction()"><p>Go to the top</p></a>
+                <button type="submit" value="Submit">Submit</button>
+                <button type="reset" value="cancel">Cancel</button>
+                
+                <script>
+                    function arrowOnClick() {
+                        document.getElementById("last").style.display = "block";
+                    }
+
+                    function topFunction() {
+                        document.body.scrollTop = 0;
+                        document.documentElement.scrollTop = 0;
+                    }
+                </script>
+            </div>
+        </form>
+    </div>
+</body>
