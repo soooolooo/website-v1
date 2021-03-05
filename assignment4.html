@@ -113,20 +113,27 @@
 
     <script>
         function calculate(){
-            var number = document.getElementById("input-number").value;
+            var number = Number(document.getElementById("input-number").value);
             var sumNumber = Number(number) + Number(number);
             var squareNumber = Number(number) * Number(number);
-            if (number >= 0){
+            
+            if (Number(number) < 0){
+                document.getElementById("1").innerHTML="Your number is negative!";
+                document.getElementById("2").innerHTML="Your sum of (" + number + ") is = " + sumNumber;
+                document.getElementById("3").innerHTML="Your square of (" + number + ") is =" + squareNumber;
+            }
+            
+            else if (Number(number) >= 0){
                 document.getElementById("1").innerHTML="Your number is positive!";
+                document.getElementById("2").innerHTML="Your sum of (" + number + ") is = " + sumNumber;
+                document.getElementById("3").innerHTML="Your square of (" + number + ") is =" + squareNumber;
             }
 
             else {
-                document.getElementById("1").innerHTML="Your number is negative!";
+                document.getElementById("1").innerHTML="You have to write a valid number";
+                document.getElementById("2").innerHTML="Please re-enter a valid number above.";
+                document.getElementById("3").innerHTML="";
             }
-            document.getElementById("2").innerHTML="Your sum of (" + number + ") is = " + sumNumber;
-            document.getElementById("3").innerHTML="Your square of (" + number + ") is =" + squareNumber;
-
-            document.getElementsByClassName("output-container").style.animation = "output-intro 1s 2";
         }
     </script>
 </body>
