@@ -1,0 +1,111 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Beeshi">
+    <meta name="description" content="Best">
+    <meta name="author" content="Beeshi">
+    <title>Assignment 3-1</title>
+    <link rel="icon" href="gfx/cvlogo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            text-decoration: none;
+        }
+
+        body{
+            margin: 0;
+            background-color: #202020;
+            text-align: center;
+            color: white;
+        }
+
+        .div-container{
+            border: 1px solid white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            animation-name: intro;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            opacity: 0;
+        }
+
+        .inputs{
+            display:inline-block;
+        }
+
+        input{
+            width: 90px;
+            font-size: 30px;
+            color: black;
+            margin: 0px 10px;
+        }
+
+        .button{
+            font-size: 20px;
+            color: white;
+            border:1px solid white;
+            background-color:#202020;
+            padding: 10px;
+            transition: all 0.5s;
+        }
+
+        .button:hover{
+            background-color: #505050;
+            font-size: 26px;
+        }
+
+        @keyframes intro{
+            0%{
+                opacity: 0;
+            }
+        
+            100%{
+                opacity: 100;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div-container">
+        <div class="input-container">
+            <img src="gfx/calculator.png" width="70px">
+            <h3>Welcome!</h3>
+            <h3>Please type three integer numbers below</h3>
+            <div class="inputs">
+                <input type="text" id="input1" name="input-number">
+                <input type="text" id="input2" name="input-number">
+                <input type="text" id="input3" name="input-number">
+            </div>
+            <p>In this page, You will be typing three number of your choice to be multiplied.</p>
+            <button class="button" onclick="calculate()">Calculate</button>
+        </div>
+        <div class="output-container">
+            <h2 id="1"></h2>
+        </div>
+    </div>
+
+    <script>
+        function calculate(){
+            var number1 = Number(document.getElementById("input1").value);
+            var number2 = Number(document.getElementById("input2").value);
+            var number3 = Number(document.getElementById("input3").value);
+            var total = number1 * number2 * number3;
+
+            if ((number1 >= 0 || number1 < 0) && (number2 >= 0 || number2 < 0) && (number3 >= 0 || number3 < 0)){
+                document.getElementById("1").innerHTML="" + number1 + " * " + number2 + " * " + number3 + " = " + total;
+            }
+
+            else{
+                document.getElementById("1").innerHTML="ERROR: You've entered an invalid number, Please re-write a valid number.";
+            }
+        }
+    </script>
+</body>
