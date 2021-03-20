@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="Assignment submission">
+    <meta name="author" content="Osama Albeeshi, Emad As-sawah, Abdullah Alnaser, Khalid Alotaibi">
+    <title>Assignment 6-1</title>
+    <link rel="icon" href="gfx/first.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            text-decoration: none;
+        }
+
+        body{
+            margin: 0;
+            background-color: #202020;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .div-container{
+            text-align: center;
+            border: 1px solid white;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+        }
+        
+        .input-container{
+            animation-name: input-intro;
+            animation-duration: 2s;
+            animation-delay: 0.5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            opacity: 0;
+        }
+        
+        .input-container h3{
+            color: white;
+            font-weight: lighter;
+        }
+
+        .input-container p{
+            color: white;
+            font-weight: lighter;
+        }
+
+        input{
+            width: 100px;
+            font-size: 35px;
+        }
+
+        .output-container{
+            text-align: center;
+            
+        }
+
+        .output-container.output-intro{
+            display: block;
+
+            
+        }
+
+        .output-container h3{
+            color: white;
+            font-weight: lighter;
+        }
+        
+        .button{
+            font-size: 20px;
+            color: white;
+            border:1px solid white;
+            background-color:#202020;
+            padding: 10px;
+            transition: all 0.5s;
+        }
+
+        .button:hover{
+            background-color: #505050;
+            font-size: 26px;
+        }
+
+        @keyframes input-intro{
+            0%{
+                opacity: 0;
+            }
+        
+            100%{
+                opacity: 100;
+            }
+        }
+
+        @media only screen and (max-width:550px){
+            .div-container{
+                width: 82%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div-container">
+        <div class="input-container">
+            <img src="gfx/calculator.png" width="70px">
+            <h3>Welcome!</h3>
+            <h3>Please enter a palindrome number below</h3>
+            <input type="text" id="input-number" name="input-number" maxlength="5" minlength="5">
+            <p>In this page, You have to type a palindrome number.<br>Also, I will confirm if your numbers entered are palindrome.</p>
+            <button class="button" onclick="calculate()">Calculate</button>
+        </div>
+
+        <div class="output-container">
+            <h3 id="1"></h3>
+            <h3 id="2"></h3>
+            <h3 id="3"></h3>
+        </div>
+    </div>
+        
+
+    <script>
+        function calculate(){
+            var number = Number(document.getElementById("input-number").value);
+            var numberArray = Array.from(document.getElementById("input-number").value);
+            
+            if (numberArray.length < 5){
+                document.getElementById("1").innerHTML="ERROR: You must enter 5 digits.";
+                document.getElementById("2").innerHTML="Please re-enter 5 digits.";
+                document.getElementById("3").innerHTML="";
+            }
+            
+            else if (( Number(numberArray[0]) == Number(numberArray[4]) ) && ( Number(numberArray[1]) == Number(numberArray[3])) && ( Number(numberArray[2]) == Number(numberArray[2]) )){
+                document.getElementById("1").innerHTML="Your numbers are palindrome!";
+                document.getElementById("2").innerHTML="("+numberArray+")";
+                document.getElementById("3").innerHTML="";
+            }
+
+            else if ( (Number(numberArray[0]) != Number(numberArray[4])) && (Number(numberArray[1]) != Number(numberArray[3])) && ( Number(numberArray[2]) == Number(numberArray[2]) ) ){
+                document.getElementById("1").innerHTML="ERROR: Your numbers are not palindrome!";
+                document.getElementById("2").innerHTML="Please re-enter a palindrome number.";
+                document.getElementById("3").innerHTML="";
+            }
+
+            else {
+                document.getElementById("1").innerHTML="ERROR: Invalid number(s) entered";
+                document.getElementById("2").innerHTML="You have to write a valid number";
+                document.getElementById("3").innerHTML="Please re-enter a valid number above.";
+            }
+        }
+    </script>
+</body>
