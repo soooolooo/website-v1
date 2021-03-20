@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="Assignment submission">
+    <meta name="author" content="Osama Albeeshi, Emad As-sawah, Abdullah Alnaser, Khalid Alotaibi">
+    <title>Assignment 6-2</title>
+    <link rel="icon" href="gfx/first.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            text-decoration: none;
+        }
+
+        body{
+            background-color: #1f1f1f;
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+        table{
+            padding: 10px;
+            border: 1px solid white;
+            margin: 5px;
+        }
+
+        tr{
+            margin: 5px;
+        }
+
+        td{
+            border: 1px solid white;
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <th>Number</th>
+                <th>Square of the number</th>
+                <th>Cube of the number</th>
+            </tr>
+            <script>
+                var x;
+                for (x = 0; x <= 5; x++) {
+                    document.writeln("<tr>");
+                    document.writeln("<td>" + x + "</td>");
+                    document.writeln("<td>" + (x * x) + "</td>");
+                    document.writeln("<td>" + (x * x * x) + "</td>");
+                    document.writeln("</tr>");
+                }
+            </script>
+        </table>
+    </div>
+
+    
+</body>
