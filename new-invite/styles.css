@@ -1,0 +1,49 @@
+@media only screen and (max-width:550px){
+    body{
+        margin:0;
+        text-align: center;
+        background-color: #f5f5f5;
+        overflow: hidden;
+    }
+    
+    main{
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    img{
+        display: flex;
+        width: 480px;
+        height: 550px;
+    }
+    
+    .buttons{
+        display: inline-block;
+    }
+    
+    button{
+        width: fit-content;
+        height: 50px;
+        margin: 10px;
+        padding: 20px;
+        line-height: 0px;
+    
+        background-color: #f5f5f5;
+        transition: background-color 0.5s, color 0.5s;
+
+        border: 1px solid #486235;
+        border-radius: 20px;
+        
+        font-size: 18px;
+        font-family: 'Cairo', sans-serif;
+        color: #486235;
+    }
+    
+    button:hover{
+        background-color: #486235;
+        color: #f5f5f5;
+    }
+}
